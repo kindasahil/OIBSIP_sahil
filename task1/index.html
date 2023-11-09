@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(0, 0, 35);
+            color: white;
+            font-family: 'Poppins', sans-serif; 
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(9, 9, 88);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0px 25px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(154, 154, 237);
+            font-size: 1.05rem;
+        }
+        main hr{
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.5px;
+            margin: 60px 84px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: -25px 0px;
+        }
+        .firstSection > div{
+            width: 30%;
+        }
+        .leftSection{
+            
+            font-size: 2rem;
+        }
+        .rightSection{ 
+        }
+        .rightSection img{
+            width: 50%;
+            margin: 50px 0px;
+        }
+        .purple{
+            color: rgb(170, 107, 228);
+        }
+        .text-grey{
+            color: grey;
+        }
+        #element{
+            color: rgb(170, 107, 228);
+        }
+        .secondSecotion{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondSecotion h1{
+            font-size: 2rem;
+        }
+        .secondSecotion .horizontal{
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0px;
+            display: flex;
+        }
+        .secondSecotion .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+        .image-top{
+            width: 40px;
+            position: relative;
+            top: -50px;
+            left: -20px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 85px;
+            color: grey;
+            width: 150px;
+            font-size: 9px;
+        }
+        footer{
+            background-color: #0e0e1a;
+            height: 200px;
+            }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            
+        }
+        .footer-rights{
+            color: grey;
+            text-align: center;
+            padding: 12px 0;
+        }
+        .footer .third ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .footer .third ul li a:hover{
+            color: rgb(154, 154, 237);
+            font-size: 1.05rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Sahil's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello, My name is <span class="purple">Sahil</span>
+                <div>Currently I work as 
+                    <span id="element"></span></div>
+            </div>
+            <div class="rightSection">
+                <img src="/IMG_2005.JPG" alt="">
+            </div>
+        </section>
+        <hr>
+        
+        <section class="secondSecotion">
+            <span class="text-grey">What I have done so far!</span>
+            <h1>My Journey</h1>
+            <div class="horizontal">
+                <div class="vertical">
+                    <img src="/1.png" alt="" class="image-top">
+                    <div class="vertical-title">DMCP C-DAC-GIST</div>
+                    <div class="vertical-desc">Diploma in Multilingual Computer Programming</div>
+                </div>
+                <div class="vertical">
+                    <img src="/2.png" alt="" class="image-top">
+                    <div class="vertical-title">Technical Support</div>
+                    <div class="vertical-desc">Epitome Corporation PVT LTD</div>
+                </div>
+                <div class="vertical">
+                    <img src="/3.png" alt="" class="image-top">
+                    <div class="vertical-title">ReactJs- Summer Internship</div>
+                    <div class="vertical-desc">Vnurture Technologies</div>
+                </div>
+                <div class="vertical">
+                    <img src="/4.png" alt="" class="image-top">
+                    <div class="vertical-title">College App ~ Flutter</div>
+                    <div class="vertical-desc">The College App Project is a visually appealing and user-friendly mobile application</div>
+                </div>
+                <div class="vertical">
+                    <img src="/5.png" alt="" class="image-top">
+                    <div class="vertical-title">Customer Experience Specialist</div>
+                    <div class="vertical-desc">Currently Working at ETech</div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+            <div class="first">
+                Sahil's Portfolio Website
+            </div>
+            <div class="second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li><a href="https://www.instagram.com/kindasahil/">Instagram</a></li>
+                    <li><a href="www.linkedin.com/in/kindasahil">Linkedin</a></li>
+                    <li><a href="https://github.com/kindasahil">Github</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-rights">
+            Copyright &#169 www.sahilsportfolio.com | All rights reserved
+        </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Customer Experience Specialist</i>', 'Web-Developer.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
